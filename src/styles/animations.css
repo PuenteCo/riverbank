@@ -1,0 +1,9 @@
+.fade-up {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+.d1 { animation-delay: 0.05s; }
+.d2 { animation-delay: 0.15s; }
+.d3 { animation-delay: 0.25s; }
+.d4 { animation-delay: 0.4s; }
+.d5 { animation-delay: 0.55s; }

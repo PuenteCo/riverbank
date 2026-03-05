@@ -1,0 +1,72 @@
+.button {
+  font-family: var(--font-sans);
+  border-radius: 2px;
+  cursor: none;
+  transition: all 0.2s;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dark {
+  background: var(--black);
+  color: var(--off-white);
+  padding: 1rem 2rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.dark:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--border);
+  padding: 1rem 2rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.ghost:hover {
+  border-color: var(--black);
+  background: rgba(13, 34, 51, 0.04);
+}
+
+.white {
+  background: white;
+  color: var(--accent);
+  padding: 1.1rem 2.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  width: fit-content;
+}
+
+.white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  background: var(--black);
+  color: var(--off-white);
+  padding: 0.7rem 1.6rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.nav:hover {
+  background: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .button {
+    cursor: pointer;
+  }
+}

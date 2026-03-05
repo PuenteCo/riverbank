@@ -1,0 +1,15 @@
+:root {
+  --black: #0d2233;
+  --off-white: #f0ece0;
+  --warm-white: #f7f4ec;
+  --accent: #c8a227;
+  --accent-light: #d9bb5a;
+  --gold: #3a9bb5;
+  --slate: #112840;
+  --mid: #5a6470;
+  --border: rgba(13, 34, 51, 0.1);
+  --border-light: rgba(13, 34, 51, 0.06);
+
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Epilogue', sans-serif;
+}
