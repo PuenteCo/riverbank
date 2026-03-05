@@ -1,0 +1,36 @@
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.line {
+  width: 30px;
+  height: 1px;
+}
+
+.eyebrow span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.accent .line,
+.line.accent {
+  background: var(--accent);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.gold .line,
+.line.gold {
+  background: var(--gold);
+}
+
+.gold {
+  color: var(--gold);
+}

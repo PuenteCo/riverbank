@@ -1,0 +1,114 @@
+.method {
+  padding: 8rem 5rem;
+  background: var(--warm-white);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.heading em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.intro {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--mid);
+  align-self: end;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--border);
+}
+
+.step {
+  background: var(--warm-white);
+  padding: 3rem 2.5rem;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.step:hover {
+  background: var(--off-white);
+}
+
+.stepNum {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+}
+
+.step h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.step p {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: var(--mid);
+  font-weight: 300;
+}
+
+.stepTag {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.3rem 0.8rem;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  transition: all 0.3s;
+}
+
+.step:hover .stepTag {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .method {
+    padding: 5rem 2rem;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
